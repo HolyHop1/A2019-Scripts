@@ -1,0 +1,6 @@
+Function dateDifference(input)
+arr = Split(input, ";")
+fromDate = arr(0)
+toDate = arr(1)
+dateDifference = DateDiff("d",fromDate,toDate)
+End Function
