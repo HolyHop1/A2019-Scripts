@@ -1,0 +1,15 @@
+//install node js
+//npm install xmlhttprequest
+
+
+function requestGet(inputUrl){
+    var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", inputUrl, false ); // false for synchronous request
+    xmlHttp.send( null );
+    console.log(xmlHttp.responseText);
+    return xmlHttp.responseText;
+}
+
+var URL = "https://wwwinfo.mfcr.cz/cgi-bin/ares/darv_vreo.cgi?ico=05784751&jazyk=cz&xml=0";
+requestGet(URL);
