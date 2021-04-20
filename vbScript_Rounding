@@ -1,0 +1,5 @@
+Function rounding(input)
+input = Replace(input, ".", ",")
+dInput = CDbl(input)
+rounding = Round(input,2)
+End Function
