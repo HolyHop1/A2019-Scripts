@@ -1,0 +1,3 @@
+Function currentUser()
+currentUser = CreateObject("WScript.Network").UserName
+End Function
