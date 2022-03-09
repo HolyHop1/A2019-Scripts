@@ -4,3 +4,9 @@ fromDate = arr(0)
 toDate = arr(1)
 dateDifference = DateDiff("d",fromDate,toDate)
 End Function
+
+Function dateDifference()
+fromDate = "01/01/2022"
+toDate = FormatDateTime(Now, vbShortDate)
+dateDifference = 88+DateDiff("m",fromDate,toDate)*7
+End Function
